@@ -16,5 +16,7 @@ buildscript {
     dependencies {
 
         classpath("com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:1.8.10-1.0.9") // KSP plugin version
+
     }
+
 }

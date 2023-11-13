@@ -54,7 +54,7 @@ public class register extends AppCompatActivity {
                     database.userDao().insertOne(newPerson);
                     listUpdate();
                     showToast("User created successfully.");
-                    Intent intent = new Intent(register.this, mainActivity.class);
+                    Intent intent = new Intent(register.this, Login.class);
                     startActivity(intent);
                 }
             }
@@ -63,7 +63,7 @@ public class register extends AppCompatActivity {
     private boolean isEmailInUse(String email) {
                 // Check if the email is in the list of existing users
                 for (User person : personList) {
-                    if (person.getFirstName().equals(email)) {
+                    if (email != null && email.equalsIgnoreCase(person.getFirstName())) {
                         return true; // Email is already in use
                     }
                 }

@@ -25,6 +25,9 @@
             android:name=".Activity.Daily"
             android:exported="false" />
         <activity
+            android:name=".Activity.register"
+            android:exported="false" />
+        <activity
             android:name=".Activity.MonCompte"
             android:exported="false"
             android:label="@string/title_activity_mon_compte"
@@ -52,7 +55,6 @@
         <activity
             android:name=".Activity.mainActivity"
             android:exported="true">
-
         </activity>
     </application>
 
