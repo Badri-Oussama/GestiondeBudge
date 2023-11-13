@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.core.view.WindowCompat;
 import androidx.navigation.NavController;
@@ -68,5 +69,6 @@ public class GestionCategories extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_gestion_categories);
         return NavigationUI.navigateUp(navController, appBarConfiguration)
                 || super.onSupportNavigateUp();*/
+
     }
 }
