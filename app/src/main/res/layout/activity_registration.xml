@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Activity.register">
+    tools:context=".Activities.RegistrationActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -110,7 +110,15 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
 
-
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="end"
+                    android:text="Forgot password?"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/regBtn"
